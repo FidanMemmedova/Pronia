@@ -16,7 +16,7 @@
 }
 
 .container {
-  width: 1300px;
+  width: 1200px;
   height: auto;
 }
 
@@ -24,9 +24,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .features-cards .col-lg-4 {
@@ -65,7 +64,6 @@
 
 #our_products h2 {
   margin-top: 100px;
-  font-family: "Rubik", sans-serif;
   font-weight: 700;
   position: relative;
   text-align: center;
@@ -93,6 +91,37 @@
 
 #our_products .our_products_item {
   font-family: "Rubik", sans-serif;
+}
+
+#our_products .our_products_item .categories {
+  margin-top: 50px;
+}
+
+#our_products .our_products_item .categories .row {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#our_products .our_products_item .categories h4 {
+  border: 1px solid #DEE2E6;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  font-weight: 400;
+}
+
+#our_products .our_products_item .categories h4:hover {
+  border: 1px dashed #abd373;
+  color: #abd373;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#our_products .our_products_item .categories .col-lg-4 {
+  width: 150px;
 }
 
 #our_products .our_products_item h5 {
@@ -129,6 +158,13 @@
   display: block;
 }
 
+#our_products .our_products_item .item-photo:hover .shopping-items {
+  visibility: visible;
+  margin-left: 0px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
 #our_products .our_products_item .star_list {
   list-style: none;
   display: -webkit-box;
@@ -144,5 +180,99 @@
 #our_products .our_products_item .star_list svg {
   fill: #FFE24D;
   cursor: pointer;
+}
+
+#our_products .shopping-items {
+  position: relative;
+  visibility: hidden;
+  margin-left: -50px;
+}
+
+#our_products .shop-items {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  width: 125px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: -50px;
+}
+
+#our_products .shop-items li {
+  cursor: pointer;
+  background-color: white;
+  padding: 5px 8px;
+  padding: auto;
+  text-align: center;
+  -webkit-box-shadow: 5px 5px 8px #888888;
+          box-shadow: 5px 5px 8px #888888;
+}
+
+#our_products .shop-items li i {
+  font-size: 20px;
+}
+
+#our_products .shop-items li:hover {
+  background-color: #abd373;
+  color: white;
+}
+
+#collection {
+  margin-top: 80px;
+  font-family: "Rubik", sans-serif;
+}
+
+#collection .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#collection .collection-item {
+  position: relative;
+}
+
+#collection .collection-item-summary {
+  position: absolute;
+  top: 58px;
+  left: 50px;
+}
+
+#collection .collection-item-summary h2 {
+  width: 250px;
+  font-weight: 400;
+}
+
+#collection .shop_now {
+  margin-top: 20px;
+  background-color: #abd373;
+  color: white;
+  border-radius: 20px;
+  border: none;
+  width: 150px;
+  height: 40px;
+}
+
+#collection .shop_now:hover {
+  background-color: #303030;
+}
+
+#collection .plant-port-summary {
+  position: absolute;
+  left: 105px;
+  top: 43px;
+  text-align: center;
+}
+
+#collection .plant-port-summary h2 {
+  font-size: 36px;
+  font-weight: 400;
+}
+
+#collection .plant-port-summary p {
+  font-size: 16px;
 }
 /*# sourceMappingURL=main.css.map */
