@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  &::selection{
+    background-color: #abd373;
+    color: white;
+  }
+}
+.container {
+  width: 1300px;
+  height: auto;
+}
+.features-cards {
+  display: flex;
+  justify-content: center;
+  
+  .col-lg-4{
+    width: 380px;
+  }
+  .features-cards-item {
+    border: 1px dashed #abd373;
+    display: flex;
+    padding: 10px 30px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  
+    img {
+      width: 60px;
+      height: 40px;
+      margin: auto;
+    }
+    .features-cards-summary {
+      font-family: "Rubik", sans-serif;
+      padding-left: 20px;
+      h4 {
+        font-size: 20px;
+        font-weight: 500;
+      }
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+}
+#our_products {
+  h2 {
+    margin-top: 100px;
+    font-family: "Rubik", sans-serif;
+    font-weight: 700;
+    position: relative;
+    text-align: center;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 80px;
+        height: 2px;
+        background-color: #abd373;
+        top: 15px;
+        left: 33%;
+    }
+    &:after{
+        content: "";
+        position: absolute;
+        width: 80px;
+        height: 2px;
+        background-color: #abd373;
+        top: 15px;
+        right: 33%;
+    }
+  }
+  .our_products_item{
+    font-family: "Rubik", sans-serif;
+    h5{
+      font-size: 18px;
+      font-weight: 400;
+      color: #303030;
+      cursor: pointer;
+      &:hover{
+        color: #abd373;
+      }
+    }
+    p{
+      font-size:20px;
+      color: #abd373;
+    }
+   
+    .image-hover {
+      // position: absolute;
+      // top: 0;
+      // right: 0;
+      // left: 0;
+      // bottom: 0;
+      // object-fit: contain;
+      display: none;
+      cursor: pointer;
+    }
+    .item-photo{
+      cursor: pointer;
+      display: block;
+    }
+    .item-photo{
+      &:hover{
+        .image-main{
+          display: none;
+        }
+        .image-hover{
+          display: block;
+        }
+      }
+    }
+    .star_list{
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      padding: 0;
+      width: 100px;
+      svg{
+        fill:#FFE24D;
+        cursor: pointer;
+      }
+    }
+  }
+}
